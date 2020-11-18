@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.css'
 
 const MyFunctionComponent = (props) => {
     return <div>{props.text || 'default'}</div>
@@ -14,12 +14,18 @@ class MyClassComponent extends React.Component {
 function App() {
   return (
     <div className="App">
+      <img src={logo} className="App-logo" alt ="logo"/>
+  )
+}
+function App() {
+  return (
+    <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" /> 
+        <img src={logo} className="App-logo" alt="logo" />
         <MyClassComponent text = "Click below to enter Facebook"/>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://facebook.com"
           target="_blank"
           rel="noopener noreferrer"
         >
